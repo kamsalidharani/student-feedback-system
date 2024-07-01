@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body  style="background-image: url('background.jpg'); background-size: 80%;">
+    <div class="container" id="loginContainer">
+        <h1>Student Login</h1>
+        <form id="loginForm">
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" name="loginEmail" required>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="loginPassword" required>
+            <button type="submit">Login</button>
+            <div id="loginMessage"></div>
+            <div id="loginError" class="error"></div>
+        </form>
+    </div>
+
+    <div class="container" id="feedbackContainer" style="display: none;">
+        <h1>Student Feedback Form</h1>
+        <p id="studentEmailDisplay"></p>
+        <form id="feedbackForm">
+            <label for="facultyName">Faculty Name:</label>
+            <div id="facultyOptions"></div>
+            <label for="subject">Subject:</label>
+            <div id="subjectOptions"></div>
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Fair</option>
+                <option value="3">3 - Good</option>
+                <option value="4">4 - Very Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" required></textarea>
+            <button type="submit">Submit Feedback</button>
+            <div id="responseMessage"></div>
+            <div id="feedbackError" class="error"></div>
+        </form>
+        <button id="logout">Logout</button>
+    </div>
+
+    <script src="student.js"></script>
+</body>
+</html>
+

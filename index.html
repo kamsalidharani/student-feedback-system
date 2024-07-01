@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Feedback System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url('form.png'); background-size: 35%; padding-bottom:60%;">
+    <div class="container">
+        <h1>Student Feedback System</h1>
+    </div>
+    <div class="subContainer">
+        <button id="adminBtn">Admin</button>
+        <button id="studentBtn">Student</button>
+        </div>
+    <script>
+        document.getElementById('adminBtn').addEventListener('click', () => {
+            window.location.href = '/admin.html';
+        });
+
+        document.getElementById('studentBtn').addEventListener('click', () => {
+            window.location.href = '/student.html';
+        });
+    </script>
+</body>
+</html>

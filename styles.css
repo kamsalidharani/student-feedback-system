@@ -1,0 +1,223 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #fcfcfc;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-position-y: 18% ;
+    
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(rgb(102, 207, 248),rgb(68, 75, 75));
+    background-color: rgba(75, 204, 236, 0.963);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    
+}
+
+.subContainer{
+    padding-top:20%;
+}
+
+#adminBtn {
+    margin-left:42%;
+    margin-right:3%;
+    margin-top:3%
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    font-size:x-large;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+input, select, textarea, button {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input[type="radio"] {
+    display: inline;
+    margin-right: 8px;
+    
+}
+
+input[type="radio"] + label {
+    align-items: center;
+    display: right;
+    margin-right: 8px;
+    
+}
+input[type="value"]  {
+  margin-left: 20px;
+  text-align: right;
+}
+
+
+#feedbackContainer h1 {
+    margin-bottom: 20px;
+    padding-top: 40px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+#feedbackListContainer h1{
+    padding-top: 10px;
+}
+
+#facultyOptions, #subjectOptions {
+    display: inline;
+    flex-direction: left;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 60px;
+}
+
+#facultyOptions label, #subjectOptions label {
+    display: flex;
+    align-items: column;
+    margin-bottom: -19px;
+    margin-left: 35px;
+    margin-right: 60px;
+
+}
+
+#facultyOptions input, #subjectOptions input {
+    margin-right: 10px;
+}
+
+
+button {
+    background-color:  #1ab721;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+#loginMessage, #responseMessage {
+    color: green;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    font-size: 16px;
+}
+
+#logout {
+    background-color: #d9534f;
+}
+
+#logout:hover {
+    background-color: #c9302c;
+}
+
+.btn:hover {
+    background-color: #1E88E5;
+}
+
+.feedback-list {
+    list-style-type: none;
+    padding: 0;
+    overflow: scroll;
+}
+
+.feedback-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.dashboard {
+    text-align: center;
+}
+
+.feedback-controls {
+    margin-bottom: 10px;
+}
+
+
+.bar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    transition: width 0.5s;
+}
+
+#dashboardContainer {
+    margin-top: 20px;
+}
+
+#feedbackChart {
+    max-width: 100%;
+    height: 400px; /* Adjust as needed */
+}
+
+
+
+.scrollable-list {
+    max-height: 300px; /* Adjust as needed */
+    overflow-y: auto;
+    padding: 10px;
+    text-align: left;
+}
+
+#studentEmailDisplay{
+    color: rgb(37, 93, 166);
+    font-size:x-large;
+    font-weight: 1000;
+    font-family :'Times New Roman', Times, serif;
+}

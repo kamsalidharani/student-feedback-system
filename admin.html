@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Feedback List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body  style="background-image: url('background.jpg'); background-size: 80%;">
+    <div class="container" id="loginContainer">
+        <h1>Admin Login</h1>
+        <form id="loginForm">
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" name="loginEmail" required>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="loginPassword" required>
+            <button type="submit">Login</button>
+            <div id="loginMessage"></div>
+            <div id="loginError" class="error"></div>
+        </form>
+    </div>
+
+    <div class="container" id="dashboardContainer" style="display: none;">
+        <h1>Feedback Dashboard</h1>
+        <div id="dashboard"></div>
+        <button id="goBack">Go back to Feedback List</button>
+    </div>
+
+    <div class="container" id="feedbackListContainer" style="display: none;">
+        <h1>Feedback List</h1>
+        <div id="feedbackList" class="scrollable-list"></div>
+        <button id="viewDashboard">View Dashboard</button>
+        <button id="logout">Logout</button>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
+
+
+
